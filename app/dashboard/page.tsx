@@ -18,6 +18,21 @@ export default async function Page() {
   const latestInvoices = await fetchLatestInvoices();
   const revenue = await fetchRevenue();
 
+  // const data = await Promise.all([
+  //   fetchCardData(),
+  //   fetchLatestInvoices(),
+  //   fetchRevenue(),
+  // ]);
+
+  // const {
+  //   numberOfCustomers,
+  //   numberOfInvoices,
+  //   totalPaidInvoices,
+  //   totalPendingInvoices,
+  // } = data[0];
+  // const latestInvoices = data[1];
+  // const revenue = data[2];
+
   return (
     <main>
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
